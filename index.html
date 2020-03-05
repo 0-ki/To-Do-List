@@ -116,7 +116,7 @@
         }
 
         $('.fa-plus').click(function() {
-            addTask();
+            if($('.txtb').val()!='')addTask();
         });
         $('.txtb').on('keyup', function(e) {
             if (e.keyCode == 13 && $('.txtb').val() != '') {
@@ -124,9 +124,5 @@
             }
         });
 
-
-
-        //        $('.task .fa-trash')
-        //        $('.task .fa-check')
     </script>
 </body></html>
